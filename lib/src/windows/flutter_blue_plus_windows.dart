@@ -43,7 +43,7 @@ class FlutterBluePlusWindows {
     if (_initialized) return;
     await WinBle.initialize(
       serverPath: await WinServer.path,
-      enableLog: false,
+      enableLog: true,
     );
 
     WinBle.connectionStream.listen(
